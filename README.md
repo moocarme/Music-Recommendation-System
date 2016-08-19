@@ -8,3 +8,6 @@ Strategies used to recommend songs include recommending
 - based on popular songs - choose the top 500 most played songs
 - based on user-user similarity - choose songs that similar users listen to
 - based on item-item similarity - choose songs that similar because they have many common listeners 
+
+Once a good strategy is found, custom recommendations are created based on metadata. For example, chillout playlists are created of 
+recommended songs with low tempo.  
