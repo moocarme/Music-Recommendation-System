@@ -47,6 +47,8 @@ ggplot() + geom_bin2d(data = tot_data_df,
 
 # Create play index
 PlayIndex <- log(tot_data_df$Total.Artists/tot_data_df$Mean.Artist.Plays)
+
+# Plot distribution
 ggplot() + geom_histogram(aes(PlayIndex), bins = 200) +
   labs(x = 'Play Index', title = 'Distribution of Play Index') + 
   geom_vline(aes(xintercept = mean(PlayIndex)), colour = 'red') +
@@ -57,5 +59,5 @@ kurtosis(logArtistIndex)
 skewness(logArtistIndex)
 
 # check out min and max play indices
-tot_data_df[which.max(logArtistIndex),]
+tot_data_df[which.max(logArtistIndex),1]
 tot_data_df[which.min(logArtistIndex),]
