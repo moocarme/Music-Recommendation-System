@@ -11,3 +11,4 @@ Strategies used to recommend songs include recommending
 
 Once a good strategy is found, custom recommendations are created based on metadata. For example, chillout playlists are created of 
 recommended songs with low tempo.  
+
